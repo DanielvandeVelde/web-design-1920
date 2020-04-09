@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+}
+
+header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  border-bottom: 5px solid red;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+header ul li {
+  margin: 0 1em;
+}
+
+body {
+  overflow: hidden;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+}
+
+form {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  width: 500%;
+  overflow: hidden;
+}
+
+fieldset {
+  padding-top: 5vh;
+  height: 100vh;
+  width: 100vw;
+  visibility: collapse;
+}
+
+fieldset:target {
+  visibility: visible;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+*:focus {
+  border: 3px solid cyan;
+  outline: none;
+}
+
+input {
+  font-size: 1em;
+}
+
+.hidden {
+  visibility: collapse;
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  background-color: #ffffffcc;
+  vertical-align: top;
+  width: 0.5em;
+  height: 1em;
+  animation: blink 1s step-end infinite;
+}
+
+h2::before {
+  content: ">_ ";
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>9292.0</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <!-- Put filled in info here -->
+        <li>Vertrek: <span></span></li>
+        <li>Aankomst: <span></span></li>
+        <li>Datum: <span>01</span>/<span>01</span>/<span>1970</span></li>
+        <li>Tijd: <span>00</span>:<span>00</span></li>
+      </ul>
+    </header>
+    <main>
+      <section id="zero">
+        <div>
+          <h2>Hoe werkt het?</h2>
+          <p>
+            Vul de velden in met de nodige informatie, druk op de knop en dan
+            komt alles goed.
+          </p>
+          <a href="#vertrek">Next</a>
+        </div>
+      </section>
+      <form>
+        <fieldset id="vertrek">
+          <label>
+            <h2>We vetrekken vanaf:</h2>
+            <input type="text" />
+          </label>
+          <a href="#aankomst">Next</a>
+        </fieldset>
+        <fieldset id="aankomst">
+          <label>
+            <h2>We gaan naar:</h2>
+            <input type="text" />
+          </label>
+          <a href="#datum">Next</a>
+        </fieldset>
+        <fieldset id="datum">
+          <label>
+            <h2>We gaan om dd/mm/yyyy:</h2>
+            <input type="number" /><input type="number" /><input
+              type="number"
+            />
+          </label>
+          <a href="#tijd">Next</a>
+        </fieldset>
+        <fieldset id="tijd">
+          <label>
+            <h2>En om hh:nn</h2>
+            <input type="number" /><input type="number" />
+          </label>
+          <a href="#last check">Next</a>
+        </fieldset>
+        <fieldset id="last check">
+          <h2>Klopt dit?</h2>
+          <!-- Repeat info, grab with JS-->
+          <a href="#zero">Next</a>
+          <button>Send</button>
+          <!-- Will be a send button -->
+        </fieldset>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
