@@ -1,28 +1,65 @@
+@font-face {
+  font-family: ThinWorms;
+  src: url(../fonts/MB-Thin_Worms.ttf);
+}
+
 html {
   scroll-behavior: smooth;
   background-color: black;
   color: white;
   font-size: 1.5em;
+  font-family: monospace;
 }
 
-header {
+body::before {
   position: fixed;
-  bottom: 0;
+  font-family: ThinWorms;
+  content: "Marijn";
+  font-size: 3em;
+  z-index: -1;
+  color: #222;
+  opacity: 1;
+  top: -5%;
+  font-size: 50vw;
+  letter-spacing: -0.125em;
   left: 0;
-  background-color: green;
-  border-bottom: 5px solid red;
-  width: 100%;
 }
 
-header ul {
+footer {
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  width: calc(100% - 2px);
+}
+
+footer ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
   padding: 0;
+  margin: 0;
 }
 
-header ul li {
-  margin: 0 1em;
+footer ul li {
+  width: 100%;
+  height: 100%;
+}
+
+footer ul li:first-child a {
+  border-left: 1px solid white;
+}
+
+footer ul li:last-child a {
+  border-right: 1px solid white;
+}
+
+footer ul li a {
+  width: 100%;
+  padding: 1em 0;
+  display: block;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 body {
@@ -30,24 +67,51 @@ body {
 }
 
 section {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section div {
+  position: relative;
+  top: -5vh;
+  width: 50%;
 }
 
 form {
   padding: 2em;
   display: flex;
   flex-direction: row;
-  width: 500%;
   overflow: hidden;
 }
 
 fieldset {
+  position: fixed;
+  top: 0;
+  left: 0;
   padding-top: 5vh;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  border: none;
   visibility: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset label {
+  position: relative;
+  top: -10vh;
+}
+
+fieldset label h2 {
+  padding-bottom: 2.5vh;
+}
+
+fieldset label input {
+  width: 100%;
 }
 
 fieldset:target {
@@ -59,8 +123,59 @@ a {
   color: white;
 }
 
-*:focus {
-  border: 3px solid cyan;
+footer li a:focus,
+footer li a:hover {
+  border: 3px solid #4af626;
+  outline: none;
+  color: #4af626;
+  margin: -2px;
+}
+
+fieldset div {
+  display: flex;
+}
+
+input {
+  border: 3px solid transparent;
+}
+
+input:focus,
+input:hover {
+  border: 3px solid #4af626;
+  outline: none;
+}
+
+section a,
+fieldset a {
+  color: black;
+  padding: 1em;
+  background: #4af626;
+  border: 3px solid transparent;
+  position: fixed;
+  bottom: 15vh;
+  right: 5vw;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 rgba(74, 246, 38, 0.4);
+    background-color: #4af626;
+    border: 3px solid transparent;
+    color: black;
+  }
+  to {
+    box-shadow: 0 0 0 45px rgba(74, 246, 38, 0);
+    color: #4af626;
+    border: 3px solid #4af626;
+    background-color: transparent;
+  }
+}
+
+section a:focus,
+section a:hover,
+fieldset a:focus,
+fieldset a:hover {
+  animation: pulse 1s alternate infinite;
   outline: none;
 }
 

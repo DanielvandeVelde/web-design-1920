@@ -47,6 +47,22 @@ Ik ga voor Marijn een product ontwerpen wat hem gaat helpen zijn treinreizen te 
 Dit betekend dat ik waarschijnlijk aan de slag moet gaan met iets wat de datum voor hem moet selecteren, maar misschien kan ik dit op meerdere manieren oplossen.
 En natuurlijk wil ik dat dit een variant word die Marijn echt kan gebruiken.
 
+Ik heb een toffe achtergrond gemaakt van een soort metal logo met Marijns naam zowel als een monospace terminal achtige omgeving verder. De hoop is dat Marijn het leuk vind om twee van zijn passies terug te zien in mijn werk.
+
+Verder heb ik gezorgd voor een grote duidelijk groene knop in de kleur 'terminal' groen. Dit is de hoofdinteractie dus vandaar duidelijk en goed gekleurd.
+
+Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal besloten heeft. Dit is tevens een klikbaar menu waar hij ten allen tijden terug kan gaan om dingen te veranderen.
+
+Er zijn nog een aantal dingen die ik wil weten voor de volgende versie:
+
+- Is Marijn zo geweldig dat hij weet in welke provincie de stad bevind die hij wilt bezoeken? Dan kan ik namelijk station selectie op provincie -> stad mogelijk maken.
+- Welke manier van typen gebruikt Marijn of welke prefereert hij? Gebruikt hij iets zoals T9, een QWERTY-toetsenbord lay-out of het alfabet beginnend bij de A?
+- Wil Marijn enkel de datum invullen of is de dag van de week ook relevant voor hem?
+- Heeft hij een standaard vertrek station? Wilt hij deze hebben als vaste keuze voor vertrek en aankomst? (terugreis)
+- Er wordt bij de NS een keuze aangeboden voor 'toegankelijk reizen' zowel als extra overstaptijd. Maakt Marijn hier gebruik van?
+- Wilt Marijn via bepaalde stations reizen of wilt hij enkel een start en aankomststation aangeven?
+-
+
 #### TODO uitwerking 1
 
 Nog te veel te doen.
@@ -56,3 +72,18 @@ Nog te veel te doen.
 - [ ] Meer nonsense!
 - [ ] Goede uitwerking datepicker
 - [ ] Lus maken naar 9292, mogelijk terugkoppeling ipv redirect
+
+<!--
+
+Button groter - naar rechts
+Tekst in het midden
+Button gespiegeld, groot en groen
+Door pronvincies pijltjes toetsen
+Door alfabet pijltjes toetsen
+Overstappen?
+Dagen van de week laten zien
+Tijd van aankomst of vertrek
+Van station, naar station
+
+
+-->
