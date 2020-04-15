@@ -66,6 +66,24 @@ Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal b
 
 Kan Marijn een reis plannen van Eindhoven naar Amsterdam.
 
+##### Hoe werkt het invullen van de treinstations voor Marijn?
+
+Kan hij dit goed met invul velden?  
+Moet ik hier iets anders op verzinnen?
+
+##### Hoe werkt het invullen van de nummer velden?
+
+Is omhoog/naar beneden te vervelend voor bijvoorbeeld 31 dagen van het jaar?  
+Is het nodig dat hij weet welke dag van de week het is?
+
+##### Kan hij het volledige prototype succesvol doorlopen?
+
+Waar gaat het fout, zie ik hier makkelijke oplossingen voor?
+
+##### Hoe werken de pijltjes toetsen/enter toets als besturing?
+
+Zijn er andere knoppen die Marijn prettiger vind/beter werken?
+
 #### TODO uitwerking 1
 
 Nog te veel te doen.
