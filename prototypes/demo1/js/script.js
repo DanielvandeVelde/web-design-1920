@@ -63,8 +63,23 @@ function lastCheck() {
 
 document.getElementsByTagName("a")[5].addEventListener("click", done);
 function done() {
-  focusWindow();
-  console.log("Nothing happens?!");
+  let values = [];
+  for (var i = 0; i < inputArray.length; i++) {
+    if (inputArray[i].value) {
+      values.push(inputArray[i].value);
+    } else {
+      values.push("00");
+    }
+  }
+
+  console.log(values);
+  window.location.href = `https://www.ns.nl/reisplanner/#/?vertrek=${
+    values[0]
+  }&vertrektype=treinstation&aankomst=${
+    values[1]
+  }&aankomsttype=treinstation&type=vertrek&tijd=${values[4]}-${values[3]}-${
+    values[2]
+  }T${values[5]}:${values[6]}`;
 }
 
 document
@@ -140,6 +155,10 @@ document.onkeydown = function myFunction() {
           }
           if (formItem == 3) {
             document.getElementsByTagName("input")[formItem - 1].focus();
+            inputFocus = true;
+          }
+          if (formItem == 4) {
+            document.getElementsByTagName("input")[formItem + 1].focus();
             inputFocus = true;
           }
           break;

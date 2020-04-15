@@ -53,7 +53,7 @@ Verder heb ik gezorgd voor een grote duidelijk groene knop in de kleur 'terminal
 
 Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal besloten heeft. Dit is tevens een klikbaar menu waar hij ten allen tijden terug kan gaan om dingen te veranderen.
 
-Er zijn nog een aantal dingen die ik wil weten voor de volgende versie:
+### Vragen vooraf
 
 - Is Marijn zo geweldig dat hij weet in welke provincie de stad bevind die hij wilt bezoeken? Dan kan ik namelijk station selectie op provincie -> stad mogelijk maken.
 - Welke manier van typen gebruikt Marijn of welke prefereert hij? Gebruikt hij iets zoals T9, een QWERTY-toetsenbord lay-out of het alfabet beginnend bij de A?
@@ -61,6 +61,10 @@ Er zijn nog een aantal dingen die ik wil weten voor de volgende versie:
 - Eindhoven als vast vertrek station en Amsterdam als vast aankomst?
 - Er wordt bij de NS een keuze aangeboden voor 'toegankelijk reizen' zowel als extra overstaptijd. Maakt Marijn hier gebruik van?
 - Wilt Marijn via bepaalde stations reizen of wilt hij enkel een start en aankomststation aangeven?
+
+### Testplan
+
+Kan Marijn een reis plannen van Eindhoven naar Amsterdam.
 
 #### TODO uitwerking 1
 
