@@ -43,6 +43,9 @@ Voor het product is het belangrijk dat er:
 
 ### Uitwerking 1
 
+<details>
+<summary>Alles uit week 1</summary>
+
 Ik ga voor Marijn een product ontwerpen wat hem gaat helpen zijn treinreizen te plannen.  
 Dit betekend dat ik waarschijnlijk aan de slag moet gaan met iets wat de datum voor hem moet selecteren, maar misschien kan ik dit op meerdere manieren oplossen.
 En natuurlijk wil ik dat dit een variant word die Marijn echt kan gebruiken.
@@ -94,6 +97,20 @@ Nog te veel te doen.
 - [ ] Meer nonsense!
 - [ ] Goede uitwerking datepicker
 - [ ] Lus maken naar 9292, mogelijk terugkoppeling ipv redirect
+
+</details>
+
+### Uitwerking 2
+
+<details>
+<summary> Hier alles over uitwerking 2 </summary>
+
+- HJKL zowel als pijltjes toetsen
+- Links/rechts moet ook bepalen dat je links en rechts gaat
+  "marijn niet slopen" - toevoegen wanneer hij iets wil slopen?
+- Random messages op start-up?
+
+</details>
 
 <!--
 
