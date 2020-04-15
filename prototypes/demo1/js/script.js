@@ -5,9 +5,15 @@ let menuItem = 1;
 let menuFocus = false;
 let formItem = 0;
 let inputFocus = false;
+let inputItems = 0;
+let currentInputItem = 0;
+let aFocus = false;
 
 //Let's start off with a hacky function
 function focusWindow() {
+  inputFocus = false;
+  menuFocus = false;
+  aFocus = false;
   //Creating and removing a button to give the window focus
   let tempButton = document.createElement("button");
   document.body.appendChild(tempButton);
@@ -23,34 +29,41 @@ document.getElementsByTagName("a")[0].addEventListener("click", function(e) {
 document.getElementsByTagName("a")[0].addEventListener("click", vertrek);
 document.getElementsByTagName("a")[6].addEventListener("click", vertrek);
 function vertrek() {
+  focusWindow();
   formItem = 1;
 }
 
 document.getElementsByTagName("a")[1].addEventListener("click", aankomst);
 document.getElementsByTagName("a")[7].addEventListener("click", aankomst);
 function aankomst() {
+  focusWindow();
   formItem = 2;
 }
 
 document.getElementsByTagName("a")[2].addEventListener("click", datum);
 document.getElementsByTagName("a")[8].addEventListener("click", datum);
 function datum() {
+  focusWindow();
   formItem = 3;
+  inputItems = 3;
 }
 
 document.getElementsByTagName("a")[3].addEventListener("click", tijd);
 document.getElementsByTagName("a")[9].addEventListener("click", tijd);
 function tijd() {
+  focusWindow();
   formItem = 4;
 }
 
 document.getElementsByTagName("a")[4].addEventListener("click", lastCheck);
 function lastCheck() {
+  focusWindow();
   formItem = 5;
 }
 
 document.getElementsByTagName("a")[5].addEventListener("click", done);
 function done() {
+  focusWindow();
   console.log("Nothing happens?!");
 }
 
@@ -98,8 +111,8 @@ document.onkeydown = function myFunction() {
       }
       break;
     case 37:
+      console.log("left pressed");
       if (inputFocus == false) {
-        console.log("left pressed");
         if (menuFocus == true) {
           if (menuItem > 1) {
             console.log("Moving left in the menu");
@@ -114,6 +127,7 @@ document.onkeydown = function myFunction() {
           break;
         }
         if (menuFocus == false) {
+          aFocus = false;
           if (formItem == 0) {
             console.log("No input to select");
             break;
@@ -123,6 +137,10 @@ document.onkeydown = function myFunction() {
             console.log("selecting input no: " + (formItem - 1));
             inputFocus = true;
             break;
+          }
+          if (formItem == 3) {
+            document.getElementsByTagName("input")[formItem - 1].focus();
+            inputFocus = true;
           }
           break;
         }
@@ -147,6 +165,7 @@ document.onkeydown = function myFunction() {
         if (menuFocus == false) {
           document.getElementsByTagName("a")[formItem].focus();
           console.log("selecting button no: " + formItem);
+          aFocus = true;
           break;
         }
       }
@@ -154,8 +173,16 @@ document.onkeydown = function myFunction() {
     case 13:
       console.log("Enter key is pressed");
       if (inputFocus == true) {
-        inputFocus = false;
         focusWindow();
+        break;
+      }
+      if (inputFocus == false && aFocus == false && menuFocus == false) {
+        if (formItem > 0 && formItem < 3) {
+          document.getElementsByTagName("input")[formItem - 1].focus();
+          console.log("selecting input no: " + (formItem - 1));
+          inputFocus = true;
+          break;
+        }
       }
       break;
   }

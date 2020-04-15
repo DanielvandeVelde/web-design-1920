@@ -61,14 +61,13 @@ Er zijn nog een aantal dingen die ik wil weten voor de volgende versie:
 - Eindhoven als vast vertrek station en Amsterdam als vast aankomst?
 - Er wordt bij de NS een keuze aangeboden voor 'toegankelijk reizen' zowel als extra overstaptijd. Maakt Marijn hier gebruik van?
 - Wilt Marijn via bepaalde stations reizen of wilt hij enkel een start en aankomststation aangeven?
--
 
 #### TODO uitwerking 1
 
 Nog te veel te doen.
 
-- [ ] Basic CSS
-- [ ] Meer identity
+- [x] Basic CSS
+- [x] Meer identity
 - [ ] Meer nonsense!
 - [ ] Goede uitwerking datepicker
 - [ ] Lus maken naar 9292, mogelijk terugkoppeling ipv redirect

@@ -146,7 +146,7 @@ input {
 
 input:focus,
 input:hover {
-  border: 3px solid #4af626;
+  border-bottom: 3px solid #4af626;
   outline: none;
 }
 
@@ -186,6 +186,9 @@ fieldset a:hover {
 
 input {
   font-size: 1em;
+  color: white;
+  border-bottom: 3px solid white;
+  background-color: transparent;
 }
 
 .hidden {
