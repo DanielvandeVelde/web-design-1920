@@ -58,7 +58,7 @@ Er zijn nog een aantal dingen die ik wil weten voor de volgende versie:
 - Is Marijn zo geweldig dat hij weet in welke provincie de stad bevind die hij wilt bezoeken? Dan kan ik namelijk station selectie op provincie -> stad mogelijk maken.
 - Welke manier van typen gebruikt Marijn of welke prefereert hij? Gebruikt hij iets zoals T9, een QWERTY-toetsenbord lay-out of het alfabet beginnend bij de A?
 - Wil Marijn enkel de datum invullen of is de dag van de week ook relevant voor hem?
-- Heeft hij een standaard vertrek station? Wilt hij deze hebben als vaste keuze voor vertrek en aankomst? (terugreis)
+- Eindhoven als vast vertrek station en Amsterdam als vast aankomst?
 - Er wordt bij de NS een keuze aangeboden voor 'toegankelijk reizen' zowel als extra overstaptijd. Maakt Marijn hier gebruik van?
 - Wilt Marijn via bepaalde stations reizen of wilt hij enkel een start en aankomststation aangeven?
 -
@@ -75,15 +75,13 @@ Nog te veel te doen.
 
 <!--
 
-Button groter - naar rechts
-Tekst in het midden
-Button gespiegeld, groot en groen
 Door pronvincies pijltjes toetsen
 Door alfabet pijltjes toetsen
-Overstappen?
+Overstappen? of via?
+Van station, naar station Eindhoven/Amsterdam
 Dagen van de week laten zien
 Tijd van aankomst of vertrek
-Van station, naar station
-
+Ongeveer een uur/2 uur van te voren
+Alles in tekst commando's?
 
 -->
