@@ -106,9 +106,21 @@ Nog te veel te doen.
 <summary> Hier alles over uitwerking 2 </summary>
 
 - HJKL zowel als pijltjes toetsen
-- Links/rechts moet ook bepalen dat je links en rechts gaat
-  "marijn niet slopen" - toevoegen wanneer hij iets wil slopen?
+- Links/rechts moet ook bepalen dat je links en rechts gaat door de datumpicker
 - Random messages op start-up?
+- Uitleg tekst bij de velden zetten.
+- Placeholder tekst ipv value
+- Feedback verbeteren
+- Cursor veranderen wanner muis in beeld is
+- Next overbodig bij het accepteren van het inputveld (veranderen naar naam volgend veld)
+- hover & focus andere vormgeving
+- Aangeven in menu onderin wat ingevuld is
+- Interface veranderen, is iets te groot, kan eenvoudiger
+- Gebruik maken van de lege ruimte
+- feedback op 'klopt dit' scherm.
+- Kijk naar design principles <-
+- Standaard 1 uur voor werk
+- anders 1 dag van te voren
 
 </details>
 

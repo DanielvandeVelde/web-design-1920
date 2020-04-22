@@ -1,0 +1,129 @@
+.hidden {
+  visibility: collapse;
+  display: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 2em;
+  font-family: monospace;
+  width: 45em;
+  display: flex;
+  cursor: none;
+  overflow: hidden;
+  color: #292b2c;
+  background: black;
+}
+
+aside {
+  width: 15em;
+  height: 100%;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 15em;
+}
+
+aside ul li {
+  padding: 2em 2em 2em 1em;
+  background-color: #eee;
+  opacity: 0.75;
+  margin: 0.25em;
+  display: flex;
+  flex-direction: column;
+}
+
+#aankomst .chosen.selected,
+#vertrek .chosen.selected {
+  animation: flash 2s infinite;
+  opacity: 1;
+}
+
+@keyframes flash {
+  0% {
+    background: #4af626;
+  }
+  42% {
+    background: #4af626;
+  }
+  100% {
+    background: grey;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #292b2c;
+  color: grey;
+}
+
+#aankomst .chosen,
+#vertrek .chosen {
+  background: grey;
+}
+
+#mainmenu .selected,
+#mainmenu li:last-child.selected,
+#aankomst .selected,
+#vertrek .selected,
+#tijd .selected,
+#datum .selected {
+  background-color: #4af626;
+  opacity: 0.95;
+}
+
+#aankomst,
+#vertrek {
+  display: flex;
+}
+
+#aankomst li,
+#vertrek li {
+  padding: 0.69em;
+  text-align: center;
+  background-color: #ddd;
+  margin: 0.25em;
+}
+
+#aankomst ul:last-child li,
+#vertrek ul:last-child li {
+  padding: none;
+}
+
+#tijd p,
+#datum p {
+  margin-top: 0.125em;
+  font-size: 2.5em;
+  background: lightgrey;
+  padding: 0.5em 0.25em;
+}
+
+#datum p span,
+#tijd p span {
+  padding: 0 0.25em;
+}
+
+#mainmenu li:last-child {
+  background-color: #eee;
+  opacity: 1;
+  text-align: center;
+  margin-top: 1em;
+  border-radius: 0.5em;
+}
+
+body::after {
+  z-index: -1;
+  content: "";
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 42vw;
+  height: 42vw;
+  border-radius: 50%;
+  background: #292b2c;
+}
