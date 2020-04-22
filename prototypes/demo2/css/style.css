@@ -21,6 +21,11 @@ aside {
   height: 100%;
 }
 
+aside li span {
+  margin-top: 0.125em;
+  font-weight: bold;
+}
+
 section {
   position: absolute;
   top: 0;
@@ -114,7 +119,7 @@ footer {
 
 section::after {
   position: fixed;
-  top: 0;
+  top: 0.25em;
   right: 0;
   content: "";
   color: white;
