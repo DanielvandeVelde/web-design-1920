@@ -463,13 +463,33 @@ const stationsArray = [
 ];
 const dateStartValues = [];
 const timeStartValues = [];
+let annoyance = 26;
 
 window.addEventListener("load", event => {
   changeFocus();
   fillNumbers();
 });
 
+document.addEventListener("click", function() {
+  const footer = document.getElementsByTagName("footer")[0];
+  if (annoyance < 30) {
+    annoyance++;
+    footer.style.fontSize = annoyance + "px";
+  }
+  if (annoyance == 30) {
+    annoyance++;
+    footer.classList.add("rainbow");
+  }
+});
+
 document.onkeydown = function keyPress() {
+  if (event.keyCode == 13) {
+    const rock = document.getElementById("rock");
+    rock.classList.add("moveIt");
+    setTimeout(function() {
+      rock.classList.remove("moveIt");
+    }, 1500);
+  }
   if (currentArea == "mainmenu") {
     mainMenu(event.keyCode);
     return;

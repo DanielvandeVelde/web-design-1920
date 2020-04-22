@@ -10,10 +10,11 @@ body {
   font-family: monospace;
   width: 45em;
   display: flex;
-  cursor: none;
+  cursor: url(../rock.png), auto;
   overflow: hidden;
   color: #292b2c;
   background: black;
+  user-select: none;
 }
 
 aside {
@@ -43,6 +44,21 @@ aside ul li {
   margin: 0.25em;
   display: flex;
   flex-direction: column;
+}
+
+.rainbow {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #aankomst .chosen.selected,
@@ -145,4 +161,24 @@ svg {
   bottom: -17.5vw;
   width: 69vw;
   height: 69vw;
+}
+
+.moveIt {
+  animation: rockNroll 0.7s 2;
+}
+
+@keyframes rockNroll {
+  0% {
+    margin-left: 0;
+    transform: rotate(0deg);
+  }
+  33% {
+    margin-top: 13px;
+    margin-left: -6px;
+    transform: rotate(-16deg);
+  }
+  100% {
+    margin-left: 0;
+    transform: rotate(0deg);
+  }
 }
