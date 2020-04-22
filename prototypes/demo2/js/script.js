@@ -498,6 +498,10 @@ function openSection() {
     callNS();
     return;
   }
+  const menuItem = document.getElementById("mainmenu").children[0].children[
+    cursorPosition
+  ];
+  menuItem.classList.add("active");
   currentArea = areaArray[cursorPosition];
   cursorPosition = 0;
   const section = document.getElementById(currentArea);
@@ -508,9 +512,11 @@ function openSection() {
 function backtoMain() {
   const section = document.getElementById(currentArea);
   section.classList.toggle("hidden");
+  const menuItem = document.getElementsByClassName("active")[0];
+  menuItem.classList.remove("active");
+  cursorPosition = areaArray.indexOf(currentArea);
   currentArea = "mainmenu";
   currentList = 0;
-  cursorPosition = 0;
   changeFocus();
 }
 
@@ -520,7 +526,6 @@ function stationStuff() {
   const currentItem = area.children[currentList].children[cursorPosition];
   if (currentList == 2) {
     area.setAttribute("data-letter", "");
-    console.log(currentItem.textContent);
     document.getElementById("mainmenu").children[0].children[
       areaArray.indexOf(currentArea)
     ].children[1].textContent = currentItem.textContent;

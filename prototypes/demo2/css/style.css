@@ -27,6 +27,10 @@ section {
   left: 15em;
 }
 
+#mainmenu .active {
+  background: darkgrey;
+}
+
 aside ul li {
   padding: 2em 2em 2em 1em;
   background-color: #eee;
@@ -84,7 +88,7 @@ footer {
 
 #aankomst li,
 #vertrek li {
-  padding: 0.69em;
+  padding: 0.69em 1em;
   text-align: center;
   background-color: #ddd;
   margin: 0.25em;
@@ -108,22 +112,32 @@ footer {
   padding: 0 0.25em;
 }
 
+section::after {
+  position: fixed;
+  top: 0;
+  right: 0;
+  content: "";
+  color: white;
+  width: 15em;
+}
+
+#aankomst::after,
+#vertrek::after {
+  content: "Selecteer de eerste 2 letters van station of gebruik de snelkeuzes aan de rechterkant.";
+}
+
 #mainmenu li:last-child {
-  background-color: #eee;
+  background-color: ;
   opacity: 1;
   text-align: center;
   margin-top: 1em;
   border-radius: 0.5em;
 }
 
-body::after {
-  z-index: -1;
-  content: "";
+svg {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 42vw;
-  height: 42vw;
-  border-radius: 50%;
-  background: #292b2c;
+  right: -17.5vw;
+  bottom: -17.5vw;
+  width: 69vw;
+  height: 69vw;
 }

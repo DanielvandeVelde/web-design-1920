@@ -96,7 +96,7 @@ Nog te veel te doen.
 - [x] Meer identity
 - [ ] Meer nonsense!
 - [ ] Goede uitwerking datepicker
-- [ ] Lus maken naar 9292, mogelijk terugkoppeling ipv redirect
+- [ ] Lus maken naar NS, mogelijk terugkoppeling ipv redirect
 
 </details>
 
@@ -105,34 +105,37 @@ Nog te veel te doen.
 <details>
 <summary> Hier alles over uitwerking 2 </summary>
 
-- HJKL zowel als pijltjes toetsen
+#### Feedback uitwerking 1
+
+Uit de eerste test haalde ik enorm veel feedback:
+
+- HJKL om te besturen
 - Links/rechts moet ook bepalen dat je links en rechts gaat door de datumpicker
-- Random messages op start-up?
 - Uitleg tekst bij de velden zetten.
-- Placeholder tekst ipv value
+- Placeholder tekst ipv values.
 - Feedback verbeteren
-- Cursor veranderen wanner muis in beeld is
+- Cursor veranderen wanneer muis in beeld is.
 - Next overbodig bij het accepteren van het inputveld (veranderen naar naam volgend veld)
 - hover & focus andere vormgeving
 - Aangeven in menu onderin wat ingevuld is
 - Interface veranderen, is iets te groot, kan eenvoudiger
 - Gebruik maken van de lege ruimte
 - feedback op 'klopt dit' scherm.
-- Kijk naar design principles <-
-- Standaard 1 uur voor werk
-- anders 1 dag van te voren
+- Opnieuw kijken naar design principles.
+- Standaard 1 uur voor werk plant hij zijn reizen.
+- En anders is dit 1 dag van te voren
+
+#### Wat ik heb gedaan
+
+Ik heb de hele UI omgegooid en ben voor iets gegaan wat meer 'normaal' is.  
+Hopelijk maakt dat het gebruik van de applicatie iets makkelijker.  
+Ik heb alles pijltjestoetsen en muis besturing weggehaald.  
+Momenteel kan je alleen met HJKL en Enter de applicatie besturen.  
+Ik heb alle vreemde inputs weggehaald en gezorgd dat er enkel kan worden ingevuld met behulp van de besturing.  
+Hierdoor heb ik zowel als de gebruiker meer zeggeschap over wat er precies gebeurd.  
+Alle overbodige 'volgende' en 'next' knoppen zijn verwijderd.  
+Ik maak nu gebruik van de lege ruimte door wat nonsense toe te voegen.  
+Tevens heb ik ook rekening gehouden met Marijn zijn presets en mijn eerdere onderzoek van demo 1 meegenomen als solide basis.
+Ik heb een beetje meer nonsense toegevoegd en wat duidelijkheid gegeven op welk onderdeel je je bevind.
 
 </details>
-
-<!--
-
-Door pronvincies pijltjes toetsen
-Door alfabet pijltjes toetsen
-Overstappen? of via?
-Van station, naar station Eindhoven/Amsterdam
-Dagen van de week laten zien
-Tijd van aankomst of vertrek
-Ongeveer een uur/2 uur van te voren
-Alles in tekst commando's?
-
--->
