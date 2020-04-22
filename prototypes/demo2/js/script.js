@@ -472,11 +472,11 @@ window.addEventListener("load", event => {
 
 document.addEventListener("click", function() {
   const footer = document.getElementsByTagName("footer")[0];
-  if (annoyance < 30) {
+  if (annoyance < 35) {
     annoyance++;
     footer.style.fontSize = annoyance + "px";
   }
-  if (annoyance == 30) {
+  if (annoyance == 35) {
     annoyance++;
     footer.classList.add("rainbow");
   }
