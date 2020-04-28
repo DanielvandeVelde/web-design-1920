@@ -45,7 +45,7 @@ Voor het product is het belangrijk dat er:
 - Labels zijn die gelinkt zijn aan inputs
 - Werkt in Chrome & Safari
 
-### Uitwerking 1
+## Uitwerking 1
 
 <details>
 <summary>Alles uit week 1</summary>
@@ -118,12 +118,12 @@ Zijn er andere knoppen die Marijn prettiger vind/beter werken?
 
 </details>
 
-### Uitwerking 2
+## Uitwerking 2
 
 <details>
 <summary> Hier alles over uitwerking 2 </summary>
 
-#### Feedback uitwerking 1
+### Feedback uitwerking 2
 
 Uit de eerste test haalde ik enorm veel feedback:
 
@@ -142,7 +142,7 @@ Uit de eerste test haalde ik enorm veel feedback:
 - Hij plant standaard 1 uur voor werk zijn reizen.
 - En anders is dit 1 dag van te voren
 
-#### Wat ik heb gedaan
+### Wat ik heb gedaan
 
 Ik heb de hele UI omgegooid en ben voor iets gegaan wat meer 'normaal' is, geinspireerd op de oudere NS UI van de ticketautomaten.
 Hopelijk maakt dat het gebruik van de applicatie iets makkelijker.  
@@ -184,7 +184,7 @@ Ook geeft hij aan dat hij toch de eerste twee letters van het treinstation wel k
 
 </details>
 
-### Uitwerking 3
+## Uitwerking 3
 
 <details>
 <summary> Hier alles over uitwerking 3 </summary>
@@ -205,7 +205,7 @@ Feedback van test 3:
 
 </details>
 
-### Conclusie
+## Conclusie
 
 Al met al was dit voor mij een ontzettende uitdaging.  
 Niet zo zeer het testen van aannames maar zorgen voor een ontwerp wat ideaal is voor 1 persoon.  
