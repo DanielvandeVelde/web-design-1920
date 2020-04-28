@@ -463,6 +463,7 @@ const stationsArray = [
 ];
 const dateStartValues = [];
 const timeStartValues = [];
+let maxDayMonth = "";
 let annoyance = 26;
 
 window.addEventListener("load", event => {
@@ -763,23 +764,35 @@ function dateNumbers(keyCode) {
       break;
     case 74:
       console.log("J key is pressed, going down");
-      if (
-        area.children[cursorPosition].textContent >
-          dateStartValues[cursorPosition] ||
-        area.children[cursorPosition + 1].textContent >
-          dateStartValues[cursorPosition + 1]
-      ) {
-        let temp = "";
-        temp = area.children[cursorPosition].textContent;
-        temp--;
-        temp = temp.toString().padStart(2, "0");
-        area.children[cursorPosition].textContent = temp;
+      if (area.children[cursorPosition].textContent > 1) {
+        if (
+          area.children[cursorPosition].textContent >
+            dateStartValues[cursorPosition] ||
+          area.children[cursorPosition + 1].textContent >
+            dateStartValues[cursorPosition + 1]
+        ) {
+          let temp = "";
+          temp = area.children[cursorPosition].textContent;
+          temp--;
+          temp = temp.toString().padStart(2, "0");
+          area.children[cursorPosition].textContent = temp;
+        }
       }
       if (
         area.children[1].textContent == dateStartValues[1] &&
         area.children[0].textContent < dateStartValues[0]
       ) {
         area.children[0].textContent = dateStartValues[0];
+      }
+      if (cursorPosition == 1) {
+        /* Working todo and stuff*/
+        let d = new Date();
+        let check = d.setFullYear(
+          "20" + area.children[2].textContent,
+          area.children[1].textContent,
+          0
+        );
+        console.log(check);
       }
       break;
     case 75:

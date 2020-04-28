@@ -88,16 +88,6 @@ Waar gaat het fout, zie ik hier makkelijke oplossingen voor?
 
 Zijn er andere knoppen die Marijn prettiger vind/beter werken?
 
-#### TODO uitwerking 1
-
-Nog te veel te doen.
-
-- [x] Basic CSS
-- [x] Meer identity
-- [ ] Meer nonsense!
-- [ ] Goede uitwerking datepicker
-- [ ] Lus maken naar NS, mogelijk terugkoppeling ipv redirect
-
 </details>
 
 ### Uitwerking 2
@@ -137,5 +127,26 @@ Alle overbodige 'volgende' en 'next' knoppen zijn verwijderd.
 Ik maak nu gebruik van de lege ruimte door wat nonsense toe te voegen.  
 Tevens heb ik ook rekening gehouden met Marijn zijn presets en mijn eerdere onderzoek van demo 1 meegenomen als solide basis.
 Ik heb een beetje meer nonsense toegevoegd en wat duidelijkheid gegeven op welk onderdeel je je bevind.
+
+</details>
+
+### Uitwerking 3
+
+<details>
+<summary> Hier alles over uitwerking 3 </summary>
+
+Feedback van test 3:
+
+- Niet alle maanden hebben 31 dagen (duh!)
+- Start en eind locatie kunnen niet hetzelfde zijn.
+- Meer ruimte maken voor stations als het een lange lijst is
+- Tooltip - niet zichtbaar
+- Eerste letters typen is makkelijker dan letters selecteren met HJKL
+- Dagen kunnen in de min?!
+- H stuurt je terug naar hoofdmenu
+- Muis als besturing toevoegen. Klikken op letters of andere dingen
+- Wrap-around voor de tijd
+- Enter stuurt naar volgende menu item
+- Pijltjes ook toevoegen
 
 </details>
