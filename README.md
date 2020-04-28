@@ -9,7 +9,7 @@ Wie Marijn is en waarom ik exclusief voor hem design zal ik later dieper op in g
 ## De opdracht
 
 Het zorgen dat 'mijn' enige gebruiker goed om kan gaan met mijn demo's en prototypes door middel van vele testen en iteraties.
-Door dit testen met een echt mens iedere keer mijn ontwerp te verbeteren.
+Door dit testen met een echt mens iedere keer mijn ontwerp voor deze persoon te verbeteren.
 
 ## Exclusive design
 
@@ -20,9 +20,14 @@ Ik maak gebruik van verschillende [_Exclusive Design Principles_](https://exclus
 - Prioritise Identity
 - Add Nonsense
 
+Deze zal ik meerdere malen aanhalen in de verschillende prototypy uitwerkingen.
+
 ## Marijn Meijles
 
-Marijn heeft een motorische stoornis en gebruikt de computer dus net even iets anders dan de meeste mensen. Zo gebruikt hij zo min mogelijk zijn trackpad en zo veel mogelijk zijn toetsenbord om door websites te navigeren.
+Marijn heeft een motorische stoornis en gebruikt de computer dus net even iets anders dan de meeste mensen.   
+Zo gebruikt hij zo min mogelijk zijn trackpad en zo veel mogelijk zijn toetsenbord om door websites te navigeren.
+
+### Eerste ontmoeting
 
 Aan de hand van een gesprek en een eerste test werd duidelijk dat Marijn:
 
@@ -35,28 +40,43 @@ Aan de hand van een gesprek en een eerste test werd duidelijk dat Marijn:
 
 Voor het product is het belangrijk dat er:
 
-- Grote velden zijn zodat Marijn minder precies hoeft te zijn
+- Grote velden zijn zodat Marijn minder precies hoeft te zijn met klikken
 - Uitleg en/of Error-messages bij zitten
 - Labels zijn die gelinkt zijn aan inputs
 - Werkt in Chrome & Safari
-- besturing is met behulp van Enter,Spatiebalk,Pijltjes en desnoods H,J,K & L.
 
 ### Uitwerking 1
 
 <details>
 <summary>Alles uit week 1</summary>
 
+### Wat ik heb gedaan
+
 Ik ga voor Marijn een product ontwerpen wat hem gaat helpen zijn treinreizen te plannen.  
-Dit betekend dat ik waarschijnlijk aan de slag moet gaan met iets wat de datum voor hem moet selecteren, maar misschien kan ik dit op meerdere manieren oplossen.
+Dit betekent dat ik waarschijnlijk aan de slag moet gaan met iets wat de datum voor hem moet selecteren, maar misschien kan ik dit op meerdere manieren oplossen.
 En natuurlijk wil ik dat dit een variant word die Marijn echt kan gebruiken.
 
-Ik heb een toffe achtergrond gemaakt van een soort metal logo met Marijns naam zowel als een monospace terminal achtige omgeving verder. De hoop is dat Marijn het leuk vind om twee van zijn passies terug te zien in mijn werk.
+Ik heb een toffe achtergrond gemaakt van een soort metal logo met Marijns naam zowel als een monospace terminal achtige omgeving verder. 
+De hoop is dat Marijn het leuk vind om twee van zijn passies terug te zien in mijn werk.
+Tot slot vul ik ook alvast vaste waarden in, zoals Eindhoven en Amsterdam.  
+Aangezien dit is wat Marijn zelf het meeste zal gaan gebruiken.
+Een klein beetje leuke nonsense natuurlijk, maar vooral om zijn identiteit terug te laten komen. 
 
-Verder heb ik gezorgd voor een grote duidelijk groene knop in de kleur 'terminal' groen. Dit is de hoofdinteractie dus vandaar duidelijk en goed gekleurd.
+Verder heb ik gezorgd voor een grote duidelijk groene knop in de kleur 'terminal' groen, zoals je die misschien wel herkent van de groene tekst op de bekende zwarte achtergrond. 
+Dit is de hoofdinteractie dus vandaar duidelijk en goed gekleurd.
+Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal besloten heeft.  
+Dit is tevens een klikbaar menu waar hij ten allen tijden terug kan gaan om dingen te veranderen.  
 
-Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal besloten heeft. Dit is tevens een klikbaar menu waar hij ten allen tijden terug kan gaan om dingen te veranderen.
+Natuurlijk gaat een aantal van deze dingen volledig fout en ben ik aan het testen met aannames die ik eerder heb gedaan vanuit onze eerste ontmoeting.  
+Zo heb ik alles klaar gemaakt zodat je er makkelijk door heen kan gaan met tab en enter.  
+Ook heb ik functionaliteit toegevoegd met de pijltjes.
+Momenteel is het alleen mogelijk 1 van deze twee te gebruiken, niet allebei tegelijk.  
 
-### Vragen
+### Vragen bij het maken
+
+Terwijl ik bezig was met mijn eerste testplan had ik een aantal ideeen en aannames.  
+Een aantal hiervan heb ik verwerkt, sommige er van heb ik niet verwerkt en juist tijdens het testen gevraagd.
+Of uit de testen van mijn medestudenten gehaald natuurlijk.
 
 - Is Marijn zo geweldig dat hij weet in welke provincie de stad bevind die hij wilt bezoeken? Dan kan ik namelijk station selectie op provincie -> stad mogelijk maken.
 - Welke manier van typen gebruikt Marijn of welke prefereert hij? Gebruikt hij iets zoals T9, een QWERTY-toetsenbord lay-out of het alfabet beginnend bij de A?
@@ -69,24 +89,32 @@ Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal b
 ### Testplan
 
 Kan Marijn een reis plannen van Eindhoven naar Amsterdam.
+Hieronder de vragen met antwoorden, overige feedback staat onder het kopje van volgende week.  
 
 ##### Hoe werkt het invullen van de treinstations voor Marijn?
 
 Kan hij dit goed met invul velden?  
+- Dit kan, maar typen is niet het allermakkelijkst voor Marijn
 Moet ik hier iets anders op verzinnen?
+- Waarom niet :-)
 
 ##### Hoe werkt het invullen van de nummer velden?
 
 Is omhoog/naar beneden te vervelend voor bijvoorbeeld 31 dagen van het jaar?  
+- Nee, dat is het niet
 Is het nodig dat hij weet welke dag van de week het is?
+- Niet noodzakelijk
 
 ##### Kan hij het volledige prototype succesvol doorlopen?
 
 Waar gaat het fout, zie ik hier makkelijke oplossingen voor?
+ - Meerdere dingen die 'fout' gaan. Opgeschreven als feedback
 
 ##### Hoe werken de pijltjes toetsen/enter toets als besturing?
 
 Zijn er andere knoppen die Marijn prettiger vind/beter werken?
+- H,J,K & L als besturing werkt het best. 
+- Tab functionaliteiten is niet belangrijk/wordt niet gebruikt
 
 </details>
 
@@ -99,25 +127,24 @@ Zijn er andere knoppen die Marijn prettiger vind/beter werken?
 
 Uit de eerste test haalde ik enorm veel feedback:
 
-- HJKL om te besturen
-- Links/rechts moet ook bepalen dat je links en rechts gaat door de datumpicker
-- Uitleg tekst bij de velden zetten.
-- Placeholder tekst ipv values.
-- Feedback verbeteren
-- Cursor veranderen wanneer muis in beeld is.
-- Next overbodig bij het accepteren van het inputveld (veranderen naar naam volgend veld)
-- hover & focus andere vormgeving
+- De toetsen; HJKL om te besturen
+- Links/rechts moet ook bepalen dat hij links en rechts gaat door de datumpicker
+- Uitleg tekst bij de velden zetten en niet enkel aan het begin. Dit is te veel instuderen.
+- Placeholder tekst ipv values (logisch maar goed om te weten)
+- Feedback bij verplaatsen over scherm verbeteren
+- Nonsense: Cursor veranderen wanneer muis in beeld is.
+- De knop 'Next' is overbodig bij het accepteren van het inputveld (veranderen naar naam volgend veld)
+- hover & focus andere vormgeving geven
 - Aangeven in menu onderin wat ingevuld is
-- Interface veranderen, is iets te groot, kan eenvoudiger
-- Gebruik maken van de lege ruimte
-- feedback op 'klopt dit' scherm.
-- Opnieuw kijken naar design principles.
-- Standaard 1 uur voor werk plant hij zijn reizen.
+- Interface veranderen, is iets te groot, kan kleiner en eenvoudiger
+- Gebruik maken van de lege ruimte (misschien met meer nonsense?!)
+- feedback in tekst geven op het bevestigings/'klopt dit?'-scherm.
+- Hij plant standaard 1 uur voor werk zijn reizen.
 - En anders is dit 1 dag van te voren
 
 #### Wat ik heb gedaan
 
-Ik heb de hele UI omgegooid en ben voor iets gegaan wat meer 'normaal' is.  
+Ik heb de hele UI omgegooid en ben voor iets gegaan wat meer 'normaal' is, geinspireerd op de oudere NS UI van de ticketautomaten.
 Hopelijk maakt dat het gebruik van de applicatie iets makkelijker.  
 Ik heb alles pijltjestoetsen en muis besturing weggehaald.  
 Momenteel kan je alleen met HJKL en Enter de applicatie besturen.  
@@ -127,6 +154,33 @@ Alle overbodige 'volgende' en 'next' knoppen zijn verwijderd.
 Ik maak nu gebruik van de lege ruimte door wat nonsense toe te voegen.  
 Tevens heb ik ook rekening gehouden met Marijn zijn presets en mijn eerdere onderzoek van demo 1 meegenomen als solide basis.
 Ik heb een beetje meer nonsense toegevoegd en wat duidelijkheid gegeven op welk onderdeel je je bevind.
+
+### Testplan
+
+Kan Marijn een reis plannen van Eindhoven naar Amsterdam.
+Hieronder de vragen met antwoorden, overige feedback staat onder het kopje van volgende week.  
+
+##### Werkt het invullen van treinstations op deze manier?
+
+Is het invullen van de eerste twee letters duidelijk? 
+- Is duidelijk, maar tooltip was niet te lezen
+- Toch wel invullen met toetsenbord toevoegen
+
+##### Hoe werkt het invullen van de nummer velden?
+
+Marijn was niet in staat er veel kapot aan te maken. 
+Invullen van de velden was dus prettig.
+Feedback; dagen kunnen in de min, jaartal kan te hoog, uren/minuten moeten terug naar 0 als ze de top hebben bereikt.
+
+##### Kan hij het volledige prototype succesvol doorlopen?
+
+Marijn was goed in staat het prototype door te lopen.
+Niets hield hem hierbij tegen en hij was door niets verward
+
+##### Hoe werkt H,J,K,L + Enter als besturing?
+
+Marijn geeft aan dat hoewel hij dit beter vind dat de pijltjes-toetsen en tab hij toch ook de muis had willen gebruiken.
+Ook geeft hij aan dat hij toch de eerste twee letters van het treinstation wel kan typen.
 
 </details>
 
@@ -138,15 +192,25 @@ Ik heb een beetje meer nonsense toegevoegd en wat duidelijkheid gegeven op welk 
 Feedback van test 3:
 
 - Niet alle maanden hebben 31 dagen (duh!)
-- Start en eind locatie kunnen niet hetzelfde zijn.
-- Meer ruimte maken voor stations als het een lange lijst is
-- Tooltip - niet zichtbaar
-- Eerste letters typen is makkelijker dan letters selecteren met HJKL
-- Dagen kunnen in de min?!
-- H stuurt je terug naar hoofdmenu
-- Muis als besturing toevoegen. Klikken op letters of andere dingen
+- Start en eind locatie kunnen niet hetzelfde zijn. Hier kan ik iets voor maken.
+- Meer ruimte maken voor stations als het een lange lijst is.
+- Tooltip is niet altijd zichtbaar door locatie rechtsbovenin.
+- Eerste letters typen is makkelijker dan letters selecteren met HJKL. Dit laat echter weer een moeilijke besturing/design beslissingen over met verkeerde inputs.
+- Dagen kunnen blijkbaar in de min?
+- Naar links om terug te gaan naar hoofdmenu
+- Muis als besturing toevoegen
 - Wrap-around voor de tijd
-- Enter stuurt naar volgende menu item
-- Pijltjes ook toevoegen
+- Selectie bevestigen stuurt je naar volgende menu item in de lijst
+- Pijltjes mogelijk ook toevoegen
 
 </details>
+
+### Conclusie
+
+Al met al was dit voor mij een ontzettende uitdaging.  
+Niet zo zeer het testen van aannames maar zorgen voor een ontwerp wat ideaal is voor 1 persoon.  
+Er waren een aantal aannames die ik had gedaan of feedback dit ik had gekregen die ik netjes heb kunnen uitwerken.  
+Soms kwam daar echter weer feedback op terug dat mijn uitwerking op de eerder gegeven feedback toch niet helemaal correct was.  
+Hierbij was het selecteren van het station door te typen en het vervangen van de beweging door de applicatie. Hieruit bleek na het testen van de tweede uitwerking dat hij de stations ook best wilde typen ook al had hij hier moeite mee. Tevens bij het vervangen van de beweging door de applicatie dat hij naast de H,J,K en L ook de mogelijkheid wilde behouden om de muis te gebruiken.  
+Dus veel verschillende aannames en manieren om feedback te ontvangen en gebruiken zorgen er voor dat brede oplossingen niet altijd werken voor de individu waar voor je het maakt.
+
