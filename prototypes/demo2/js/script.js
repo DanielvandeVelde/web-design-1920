@@ -536,6 +536,7 @@ function backtoMain() {
   const menuItem = document.getElementsByClassName("active")[0];
   menuItem.classList.remove("active");
   cursorPosition = areaArray.indexOf(currentArea);
+  cursorPosition++;
   currentArea = "mainmenu";
   currentList = 0;
   changeFocus();
@@ -626,9 +627,11 @@ function fillNumbers() {
 function mainMenu(keyCode) {
   switch (keyCode) {
     case 72:
+    case 37:
       console.log("H key is pressed, but does nothing");
       break;
     case 74:
+    case 40:
       console.log("J key is pressed, going down");
       if (cursorPosition < 4) {
         changeFocus();
@@ -641,6 +644,7 @@ function mainMenu(keyCode) {
       }
       break;
     case 75:
+    case 38:
       console.log("K key is pressed, going up");
       if (cursorPosition > 0) {
         changeFocus();
@@ -653,6 +657,7 @@ function mainMenu(keyCode) {
       }
       break;
     case 76:
+    case 39:
       console.log("L key is pressed, but does nothing");
       break;
     case 13:
@@ -668,6 +673,7 @@ function stations(keyCode) {
   const maxValue = area.children[currentList].children.length - 1;
   switch (keyCode) {
     case 72:
+    case 37:
       console.log("H key is pressed, going left");
       if (currentList > 0) {
         changeFocus();
@@ -679,6 +685,7 @@ function stations(keyCode) {
       }
       break;
     case 74:
+    case 40:
       console.log("J key is pressed, going down");
       if (cursorPosition < maxValue) {
         changeFocus();
@@ -706,6 +713,7 @@ function stations(keyCode) {
       }
       break;
     case 75:
+    case 38:
       console.log("K key is pressed, going up");
       if (cursorPosition > 0) {
         changeFocus();
@@ -733,6 +741,7 @@ function stations(keyCode) {
       }
       break;
     case 76:
+    case 39:
       console.log("L key is pressed, going right");
       if (currentList < 2) {
         changeFocus();
@@ -755,6 +764,7 @@ function dateNumbers(keyCode) {
 
   switch (keyCode) {
     case 72:
+    case 37:
       console.log("H key is pressed, going left");
       if (cursorPosition > 0) {
         changeFocus();
@@ -763,6 +773,7 @@ function dateNumbers(keyCode) {
       }
       break;
     case 74:
+    case 40:
       console.log("J key is pressed, going down");
       if (area.children[cursorPosition].textContent > 1) {
         if (
@@ -785,7 +796,7 @@ function dateNumbers(keyCode) {
         area.children[0].textContent = dateStartValues[0];
       }
       if (cursorPosition == 1) {
-        /* Working todo and stuff*/
+        /* Working todo and stuff */
         let d = new Date();
         let check = d.setFullYear(
           "20" + area.children[2].textContent,
@@ -796,6 +807,7 @@ function dateNumbers(keyCode) {
       }
       break;
     case 75:
+    case 38:
       console.log("K key is pressed, going up");
       if (cursorPosition == 0) {
         if (area.children[cursorPosition].textContent < 31) {
@@ -817,8 +829,8 @@ function dateNumbers(keyCode) {
       }
       if (cursorPosition == 2) {
         if (
-          area.children[cursorPosition].textContent <
-          dateStartValues[2] + 1
+          area.children[cursorPosition].textContent < dateStartValues[2] + 1 &&
+          dateStartValues[1] == 12
         ) {
           let temp = "";
           temp = area.children[cursorPosition].textContent;
@@ -829,6 +841,7 @@ function dateNumbers(keyCode) {
       }
       break;
     case 76:
+    case 39:
       console.log("L key is pressed, going right");
       if (cursorPosition < 2) {
         changeFocus();
@@ -855,6 +868,7 @@ function timeNumbers(keyCode) {
   const area = document.getElementById(currentArea).children[0];
   switch (keyCode) {
     case 72:
+    case 37:
       console.log("H key is pressed, going left");
       if (cursorPosition > 0) {
         changeFocus();
@@ -863,6 +877,7 @@ function timeNumbers(keyCode) {
       }
       break;
     case 74:
+    case 40:
       console.log("J key is pressed, going down");
       if (area.children[cursorPosition].textContent > 0) {
         let temp = "";
@@ -870,26 +885,48 @@ function timeNumbers(keyCode) {
         temp--;
         temp = temp.toString().padStart(2, "0");
         area.children[cursorPosition].textContent = temp;
+      } else {
+        if (cursorPosition == 1) {
+          area.children[cursorPosition].textContent = "59";
+        }
+        if (cursorPosition == 0) {
+          area.children[cursorPosition].textContent = "23";
+        }
       }
       break;
     case 75:
+    case 38:
       console.log("K key is pressed, going up");
-      if (area.children[1].textContent < 59 && cursorPosition == 1) {
-        let temp = "";
-        temp = area.children[cursorPosition].textContent;
-        temp++;
-        temp = temp.toString().padStart(2, "0");
-        area.children[cursorPosition].textContent = temp;
+      if (cursorPosition == 1) {
+        if (area.children[1].textContent == 59) {
+          area.children[cursorPosition].textContent = "00";
+          break;
+        }
+        if (area.children[1].textContent < 59) {
+          let temp = "";
+          temp = area.children[cursorPosition].textContent;
+          temp++;
+          temp = temp.toString().padStart(2, "0");
+          area.children[cursorPosition].textContent = temp;
+          break;
+        }
       }
-      if (area.children[0].textContent < 23 && cursorPosition == 0) {
-        let temp = "";
-        temp = area.children[cursorPosition].textContent;
-        temp++;
-        temp = temp.toString().padStart(2, "0");
-        area.children[cursorPosition].textContent = temp;
+      if (cursorPosition == 0) {
+        if (area.children[0].textContent < 23) {
+          let temp = "";
+          temp = area.children[cursorPosition].textContent;
+          temp++;
+          temp = temp.toString().padStart(2, "0");
+          area.children[cursorPosition].textContent = temp;
+          break;
+        }
+        if (area.children[0].textContent == 23) {
+          area.children[0].textContent = "00";
+          break;
+        }
       }
-      break;
     case 76:
+    case 39:
       console.log("L key is pressed, going right");
       if (cursorPosition < 1) {
         changeFocus();
