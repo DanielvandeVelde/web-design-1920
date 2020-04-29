@@ -217,6 +217,7 @@ Het is nu ook mogelijk om terug te gaan naar het hoofdmenu. Dit plaatst je wel w
 Dagen kunnen nu niet meer in de min gaan!  
 Het jaartal kan alleen omhoog/naar beneden als het december is.  
 De tijd heeft nu een wrap-around gekregen zodat je van de top weer onderaan begint en vice versa.
+Als de lijst van treinstations te lang is dan komen deze in twee kolommen te staan.
 
 </details>
 

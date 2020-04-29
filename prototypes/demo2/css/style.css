@@ -67,6 +67,14 @@ aside ul li {
   opacity: 1;
 }
 
+#vertrek ul:last-of-type,
+#aankomst ul:last-of-type {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 95vh;
+}
+
 @keyframes flash {
   0% {
     background: #4af626;
