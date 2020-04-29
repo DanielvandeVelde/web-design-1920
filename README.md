@@ -24,7 +24,7 @@ Deze zal ik meerdere malen aanhalen in de verschillende prototypy uitwerkingen.
 
 ## Marijn Meijles
 
-Marijn heeft een motorische stoornis en gebruikt de computer dus net even iets anders dan de meeste mensen.   
+Marijn heeft een motorische stoornis en gebruikt de computer dus net even iets anders dan de meeste mensen.  
 Zo gebruikt hij zo min mogelijk zijn trackpad en zo veel mogelijk zijn toetsenbord om door websites te navigeren.
 
 ### Eerste ontmoeting
@@ -56,21 +56,21 @@ Ik ga voor Marijn een product ontwerpen wat hem gaat helpen zijn treinreizen te 
 Dit betekent dat ik waarschijnlijk aan de slag moet gaan met iets wat de datum voor hem moet selecteren, maar misschien kan ik dit op meerdere manieren oplossen.
 En natuurlijk wil ik dat dit een variant word die Marijn echt kan gebruiken.
 
-Ik heb een toffe achtergrond gemaakt van een soort metal logo met Marijns naam zowel als een monospace terminal achtige omgeving verder. 
+Ik heb een toffe achtergrond gemaakt van een soort metal logo met Marijns naam zowel als een monospace terminal achtige omgeving verder.
 De hoop is dat Marijn het leuk vind om twee van zijn passies terug te zien in mijn werk.
 Tot slot vul ik ook alvast vaste waarden in, zoals Eindhoven en Amsterdam.  
 Aangezien dit is wat Marijn zelf het meeste zal gaan gebruiken.
-Een klein beetje leuke nonsense natuurlijk, maar vooral om zijn identiteit terug te laten komen. 
+Een klein beetje leuke nonsense natuurlijk, maar vooral om zijn identiteit terug te laten komen.
 
-Verder heb ik gezorgd voor een grote duidelijk groene knop in de kleur 'terminal' groen, zoals je die misschien wel herkent van de groene tekst op de bekende zwarte achtergrond. 
+Verder heb ik gezorgd voor een grote duidelijk groene knop in de kleur 'terminal' groen, zoals je die misschien wel herkent van de groene tekst op de bekende zwarte achtergrond.
 Dit is de hoofdinteractie dus vandaar duidelijk en goed gekleurd.
 Onderin is een menu te vinden met daarin het overzicht van wat Marijn allemaal besloten heeft.  
-Dit is tevens een klikbaar menu waar hij ten allen tijden terug kan gaan om dingen te veranderen.  
+Dit is tevens een klikbaar menu waar hij ten allen tijden terug kan gaan om dingen te veranderen.
 
 Natuurlijk gaat een aantal van deze dingen volledig fout en ben ik aan het testen met aannames die ik eerder heb gedaan vanuit onze eerste ontmoeting.  
 Zo heb ik alles klaar gemaakt zodat je er makkelijk door heen kan gaan met tab en enter.  
 Ook heb ik functionaliteit toegevoegd met de pijltjes.
-Momenteel is het alleen mogelijk 1 van deze twee te gebruiken, niet allebei tegelijk.  
+Momenteel is het alleen mogelijk 1 van deze twee te gebruiken, niet allebei tegelijk.
 
 ### Vragen bij het maken
 
@@ -89,31 +89,35 @@ Of uit de testen van mijn medestudenten gehaald natuurlijk.
 ### Testplan
 
 Kan Marijn een reis plannen van Eindhoven naar Amsterdam.
-Hieronder de vragen met antwoorden, overige feedback staat onder het kopje van volgende week.  
+Hieronder de vragen met antwoorden, overige feedback staat onder het kopje van volgende week.
 
 ##### Hoe werkt het invullen van de treinstations voor Marijn?
 
-Kan hij dit goed met invul velden?  
+Kan hij dit goed met invul velden?
+
 - Dit kan, maar typen is niet het allermakkelijkst voor Marijn
-Moet ik hier iets anders op verzinnen?
+  Moet ik hier iets anders op verzinnen?
 - Waarom niet :-)
 
 ##### Hoe werkt het invullen van de nummer velden?
 
-Is omhoog/naar beneden te vervelend voor bijvoorbeeld 31 dagen van het jaar?  
+Is omhoog/naar beneden te vervelend voor bijvoorbeeld 31 dagen van het jaar?
+
 - Nee, dat is het niet
-Is het nodig dat hij weet welke dag van de week het is?
+  Is het nodig dat hij weet welke dag van de week het is?
 - Niet noodzakelijk
 
 ##### Kan hij het volledige prototype succesvol doorlopen?
 
 Waar gaat het fout, zie ik hier makkelijke oplossingen voor?
- - Meerdere dingen die 'fout' gaan. Opgeschreven als feedback
+
+- Meerdere dingen die 'fout' gaan. Opgeschreven als feedback
 
 ##### Hoe werken de pijltjes toetsen/enter toets als besturing?
 
 Zijn er andere knoppen die Marijn prettiger vind/beter werken?
-- H,J,K & L als besturing werkt het best. 
+
+- H,J,K & L als besturing werkt het best.
 - Tab functionaliteiten is niet belangrijk/wordt niet gebruikt
 
 </details>
@@ -158,17 +162,18 @@ Ik heb een beetje meer nonsense toegevoegd en wat duidelijkheid gegeven op welk 
 ### Testplan
 
 Kan Marijn een reis plannen van Eindhoven naar Amsterdam.
-Hieronder de vragen met antwoorden, overige feedback staat onder het kopje van volgende week.  
+Hieronder de vragen met antwoorden, overige feedback staat onder het kopje van volgende week.
 
 ##### Werkt het invullen van treinstations op deze manier?
 
-Is het invullen van de eerste twee letters duidelijk? 
+Is het invullen van de eerste twee letters duidelijk?
+
 - Is duidelijk, maar tooltip was niet te lezen
 - Toch wel invullen met toetsenbord toevoegen
 
 ##### Hoe werkt het invullen van de nummer velden?
 
-Marijn was niet in staat er veel kapot aan te maken. 
+Marijn was niet in staat er veel kapot aan te maken.
 Invullen van de velden was dus prettig.
 Feedback; dagen kunnen in de min, jaartal kan te hoog, uren/minuten moeten terug naar 0 als ze de top hebben bereikt.
 
@@ -205,9 +210,12 @@ Feedback van test 3:
 
 ### Wat ik heb gedaan
 
-Pijltjes zijn ook toegevoegd als manier om te navigeren door de applicatie.
+Pijltjes zijn ook toegevoegd als manier om te navigeren door de applicatie.  
+Op elke locatie kan je dus zowel pijltjes als H,K,K,L gebruiken zelfs door elkaar heen.  
 Het bevestigen van een optie zet de cursor nu op het volgende menu onderdeel, niet de ene waar je was.
-Dagen kunnen nu niet meer in de min gaan!
+Het is nu ook mogelijk om terug te gaan naar het hoofdmenu. Dit plaatst je wel weer op het menu onderdeel waar je was.  
+Dagen kunnen nu niet meer in de min gaan!  
+Het jaartal kan alleen omhoog/naar beneden als het december is.  
 De tijd heeft nu een wrap-around gekregen zodat je van de top weer onderaan begint en vice versa.
 
 </details>
@@ -220,4 +228,5 @@ Er waren een aantal aannames die ik had gedaan of feedback dit ik had gekregen d
 Soms kwam daar echter weer feedback op terug dat mijn uitwerking op de eerder gegeven feedback toch niet helemaal correct was.  
 Hierbij was het selecteren van het station door te typen en het vervangen van de beweging door de applicatie. Hieruit bleek na het testen van de tweede uitwerking dat hij de stations ook best wilde typen ook al had hij hier moeite mee. Tevens bij het vervangen van de beweging door de applicatie dat hij naast de H,J,K en L ook de mogelijkheid wilde behouden om de muis te gebruiken.  
 Dus veel verschillende aannames en manieren om feedback te ontvangen en gebruiken zorgen er voor dat brede oplossingen niet altijd werken voor de individu waar voor je het maakt.
-
+Een heel erg leuke opdracht.  
+Wel erg lastig, maar uiteindelijk veel geleerd over ontwerpen en een uiteindelijk goed resultaat.

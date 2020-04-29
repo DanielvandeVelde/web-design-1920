@@ -491,6 +491,20 @@ document.onkeydown = function keyPress() {
       rock.classList.remove("moveIt");
     }, 1500);
   }
+  if (event.keyCode == 37 || event.keyCode == 72) {
+    if (currentArea == "vertrek" || currentArea == "aankomst") {
+      if (currentList == 0) {
+        changeFocus();
+        backtoMain(0);
+      }
+    }
+    if (currentArea == "datum" || currentArea == "tijd") {
+      if (cursorPosition == 0) {
+        changeFocus();
+        backtoMain(0);
+      }
+    }
+  }
   if (currentArea == "mainmenu") {
     mainMenu(event.keyCode);
     return;
@@ -505,6 +519,7 @@ document.onkeydown = function keyPress() {
   }
   if (currentArea == "tijd") {
     timeNumbers(event.keyCode);
+    return;
   }
 };
 
@@ -530,13 +545,13 @@ function openSection() {
   changeFocus();
 }
 
-function backtoMain() {
+function backtoMain(num = 1) {
   const section = document.getElementById(currentArea);
   section.classList.toggle("hidden");
   const menuItem = document.getElementsByClassName("active")[0];
   menuItem.classList.remove("active");
   cursorPosition = areaArray.indexOf(currentArea);
-  cursorPosition++;
+  cursorPosition += num;
   currentArea = "mainmenu";
   currentList = 0;
   changeFocus();
