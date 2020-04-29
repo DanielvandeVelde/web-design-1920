@@ -203,6 +203,13 @@ Feedback van test 3:
 - Selectie bevestigen stuurt je naar volgende menu item in de lijst
 - Pijltjes mogelijk ook toevoegen
 
+### Wat ik heb gedaan
+
+Pijltjes zijn ook toegevoegd als manier om te navigeren door de applicatie.
+Het bevestigen van een optie zet de cursor nu op het volgende menu onderdeel, niet de ene waar je was.
+Dagen kunnen nu niet meer in de min gaan!
+De tijd heeft nu een wrap-around gekregen zodat je van de top weer onderaan begint en vice versa.
+
 </details>
 
 ## Conclusie
