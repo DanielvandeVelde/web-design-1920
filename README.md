@@ -221,6 +221,27 @@ Als de lijst van treinstations te lang is dan komen deze in twee kolommen te sta
 
 </details>
 
+## De applicatie
+
+Natuurlijk na al deze iteraties en goede feedback van Marijn bevat de uitwerking het volgende:
+
+- Besturing met pijtljes toetsen zowel als H,J,K & L. Bevestigen met de enter-toets.
+- Wrap-around voor alle elementen (einde gaat terug naar begin en vice versa)
+- Duidelijke tooltip-tekst op een duidelijke locatie
+- Zo min mogelijk ruimte om dingen kapot te maken of verkeerde waardes in te vullen.
+- Feedback met de locatie waar je bent op scherm en welke opties je heb geselecteerd.
+- Feedback met welke informatie er is ingevuld.
+- Sommige informatie ingevuld zoals huidige datum/tijd en snelkeuzes van stations.
+- Echte koppeling naar NS.nl voor huidige reisinformatie.
+- Eerste letters van een station selecteren ipv lange stationsnamen te typen.
+- Nonsense: Metal-cursor, groeiende tekst bij klikken, handsignaal bij enter.
+
+Kleine dingen die ik nog zou willen toevoegen:
+
+- Niet alle maanden hebben 31 dagen, hier zou ik dus een maximum op kunnen zetten.
+- vertrek- en aankomststation kunnen hetzelfde zijn, dit zou ik kunnen oplossen.
+- Verbinding met NS api om data te laten zien in dezelfde stijl met de mogelijkheid hier doorheen te bladeren met H,J,K & L.
+
 ## Conclusie
 
 Al met al was dit voor mij een ontzettende uitdaging.  
