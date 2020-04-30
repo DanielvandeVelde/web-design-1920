@@ -774,6 +774,14 @@ function stations(keyCode) {
   }
 }
 
+/*
+  Grab maximum of current month
+
+  let dateMonth = area.children[1].textContent;
+  let d = new Date("20" + area.children[2].textContent, dateMonth, 0);
+  console.log(d);
+*/
+
 function dateNumbers(keyCode) {
   const area = document.getElementById(currentArea).children[0];
 
@@ -809,16 +817,6 @@ function dateNumbers(keyCode) {
         area.children[0].textContent < dateStartValues[0]
       ) {
         area.children[0].textContent = dateStartValues[0];
-      }
-      if (cursorPosition == 1) {
-        /* Working todo and stuff */
-        let d = new Date();
-        let check = d.setFullYear(
-          "20" + area.children[2].textContent,
-          area.children[1].textContent,
-          0
-        );
-        console.log(check);
       }
       break;
     case 75:
