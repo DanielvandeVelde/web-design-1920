@@ -9,23 +9,56 @@ Wie Marijn is en waarom ik exclusief voor hem design zal ik later dieper op in g
 ## De opdracht
 
 Het zorgen dat 'mijn' enige gebruiker goed om kan gaan met mijn demo's en prototypes door middel van vele testen en iteraties.
-Door dit testen met een echt mens iedere keer mijn ontwerp voor deze persoon te verbeteren.
+Door dit testen met een echt mens iedere keer mijn ontwerp voor deze persoon te verbeteren.  
+Deze persoon is Marijn Meijles en ik zal voor hem een NS-reisplanner maken volledig aangepast aan hem!
 
 ## Exclusive design
 
-Ik maak gebruik van verschillende [_Exclusive Design Principles_](https://exclusive-design.vasilis.nl) namelijk:
+Ik maak gebruik van verschillende [_Exclusive Design Principles_](https://exclusive-design.vasilis.nl).
+Deze zal ik meerdere malen aanhalen in de verschillende prototype uitwerkingen.
+Ook heb ik voor mijn uiteindelijke uitwerking hier een overzicht van gemaakt.
+Deze principes zijn:
 
-- Study Situation
-- Ignore Conventions
-- Prioritise Identity
-- Add Nonsense
+#### Study Situation
 
-Deze zal ik meerdere malen aanhalen in de verschillende prototypy uitwerkingen.
+Het bestuderen van de situatie.  
+Niet alleen op het gebied van het web, en hoe 'mijn' persoon het web navigeert (geen muis, screenreader)
+maar ook het maken van (verkeerde!) aannames en designs voor de specifieke situatie waarin mijn persoon zich in bevind.  
+Dit kan op het web zelf, maar ook de context er om heen (enkele hand, alleen op dinsdag)
+
+#### Ignore Conventions
+
+Het web is vooral door designers gemaakt voor niet designers.  
+Voor mensen met een beperking of die op een andere manier gebruik maken van het web is dit niet altijd handig.  
+Vaak zijn de standaard waardes niet ideaal, te druk, te veel of onnodig.
+Er mag kritischer om worden gegaan met design principles en web conventies, helemaal als je maar hoeft te ontwerpen voor 1 iemand.
+
+#### Prioritise Identity
+
+Het web is gemaakt door designers en er is dus een zeker bias.  
+De identiteit van de ontwerper is aanwezig (misschien te veel) en die van de gebruiker waarschijnlijk te weinig.  
+Er kan dus veel meer worden veranderd en bedacht voor mensen die buiten deze 'digitale designer'-groep vallen.  
+Deze groepen als top-prioriteit behandelen in plaats van een doelgroep waarvoor je later je site optimaliseert.
+
+#### Add Nonsense
+
+Wanneer je ontwerpt voor mensen met bijvoorbeeld een beperking zijn er verschillende manieren waarop dat kan.  
+Deze manieren kunnen ook gebruikt worden voor nonsense.
+En nonsense is meer dan alleen iets geinigs of leuks, maar kan ook in het extreme worden doorgevoerd.
 
 ## Marijn Meijles
 
 Marijn heeft een motorische stoornis en gebruikt de computer dus net even iets anders dan de meeste mensen.  
 Zo gebruikt hij zo min mogelijk zijn trackpad en zo veel mogelijk zijn toetsenbord om door websites te navigeren.
+Hij gaat 2 maal per week naar zijn werk en gebruikt hiervoor de trein.  
+De NS-applicatie is hier met de kleine knoppen, veel typen en muis gefocuste onderdelen (bv. datum selector) niet ideaal voor Marijn.
+
+Gedurende de verschillende ontmoetingen en testen van de uitwerkingen heb ik Marijn steeds beter kunnen leren kennen.
+Mijn user needs zijn dus naarmate de verschillende iteraties volgde steeds iets aangepast.  
+Ik begon met het idee dat Marijn aardig goed kon typen en verder geen muis gebruikte en door pagina's heen ging door tab te gebruiken.  
+Dit is direct bij mijn eerste uitwerking getest en deze aanname is direct vernietigd.  
+Bij de volgende kopjes over uitwerkingen pas ik iedere keer mijn aannames en verwachtingen aan.
+Bij het kopje 'De applicatie' heb ik een stuk over wat er uiteindelijk allemaal in zit.
 
 ### Eerste ontmoeting
 
@@ -222,6 +255,47 @@ Als de lijst van treinstations te lang is dan komen deze in twee kolommen te sta
 
 </details>
 
+## Toegepast Exclusive design
+
+Dit is een klein stukje over welke stukken Exclusive Design ik heb toegepast.  
+Hierboven staat een kleine samenvatting van wat _Excluve Design_ inhoud.  
+Ook staan bij de uitwerkingen ongeveer dezelfde dingen in een meer natuurlijk proces beschreven.
+
+#### Study Situation
+
+Dankzij het fantastische idee om meerdere camera's te hebben bij het testen heb ik goed de gebruiks context kunnen zien.  
+Ook aan de hand van het velen testen van mijn -vaak net verkeerde- aannames heb ik veel geleerd.  
+Uiteindelijk was de tab-toets niet wat Marijn gebruikte, zelden de pijltjes toetsen en vrijwel altijd de H,J,K,L toetsen.  
+Soms navigeerde hij toch met de muis, ook al deed hij vrijwel alles met H,J,K & L.  
+De tijd is altijd afgestemd op vandaag, aangezien hij vaak op de dag zelf plant.
+
+#### Ignore Conventions
+
+Een vrij grote die ik heb genegeerd; de muis werkt niet!  
+Marijn gebruik graag het toetsenbord, dus heb ik dat als eerste gedesignd, zonder ook maar te denken aan muis besturing.  
+Het web is vooral door designers gemaakt voor niet designers.  
+Voor mensen met een beperking of die op een andere manier gebruik maken van het web is dit niet altijd handig.  
+Vaak zijn de standaard waardes niet ideaal, te druk, te veel of onnodig.
+Er mag kritischer om worden gegaan met design principles en web conventies, helemaal als je maar hoeft te ontwerpen voor 1 iemand.
+
+#### Prioritise Identity
+
+Een aantal aspecten zijn aangepast op Marijn en zijn identiteit.  
+De reisplanner had hij nodig voor het reizen naar werk, dus huis & werk zijn standaard waardes geworden.  
+Vaak doet hij het op de dag zelf, dus dat is de standaard waarde geworden.  
+Ik heb in de laatste uitwerking ook pas pijtljes-toetsen toegevoegd, aangezien Marijn deze bijna nooit gebruikte.  
+Marijn wilde ook specifieke wrap-arounds, van minimale waarde naar maximale, zelfs waar ik dat een onhandige keuze vond.
+Ook heb ik bij keuze in kleur, cursor en design rekening gehouden met Marijn zijn passies/hobbys en natuurlijk feedback.
+
+#### Add Nonsense
+
+In het begin voelde mijn 'geen muis, enkel H,J,K & L' als de grootste nonsense.  
+Maar inmiddels voel ik dit als noodzakelijk voor een goede werking van de uitwerking voor Marijn.  
+Wat betreft nonsense zitten er in de verschillende uitwerkingen verschillende stukjes nonsense.  
+Het begon met een volledig terminal-omgeving met terminal cursor, monospace-font en Metal achtergrond.
+Uiteindelijk heb ik een Metal cursor toegevoegd, groeiende tekst bij het klikken en een handsignaal bij iedere keer dat Marijn iets bevestigd.  
+Een knik van instemming voor zijn Metal keuzes.
+
 ## De applicatie
 
 Natuurlijk na al deze iteraties en goede feedback van Marijn bevat de uitwerking het volgende:
@@ -237,7 +311,7 @@ Natuurlijk na al deze iteraties en goede feedback van Marijn bevat de uitwerking
 - Eerste letters van een station selecteren ipv lange stationsnamen te typen.
 - Nonsense: Metal-cursor, groeiende tekst bij klikken, handsignaal bij enter.
 
-Kleine dingen die ik nog zou willen toevoegen:
+Kleine functionele dingen die ik nog zou willen toevoegen:
 
 - Niet alle maanden hebben 31 dagen, hier zou ik dus een maximum op kunnen zetten.
 - vertrek- en aankomststation kunnen hetzelfde zijn, dit zou ik kunnen oplossen.
